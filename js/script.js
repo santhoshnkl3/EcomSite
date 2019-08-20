@@ -249,6 +249,15 @@ for (var obj in mobiles) {
   //   mobileTemplate.querySelector(".mobile-price").innerText = item["price"];
   //   mobileWrapperNode.appendChild(mobileTemplate);
   // })
+
+  // mobiles[obj].forEach(function (item) {
+  //   var mobileTemplate = mobileCardTemplate.cloneNode(true);
+  //   mobileTemplate.classList.remove("mobile-card-template");
+  //   mobileTemplate.querySelector(".mobile-name").innerText = item["model"];
+  //   mobileTemplate.querySelector(".mobile-ram").innerText = item["ram"];
+  //   mobileTemplate.querySelector(".mobile-price").innerText = item["price"];
+  //   mobileWrapperNode.appendChild(mobileTemplate);
+  // })
   mobileWrapperNode.appendChild(PaginationNode);
   mobileSection.appendChild(mobileWrapperNode);
 }

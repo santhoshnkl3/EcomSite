@@ -1,0 +1,56 @@
+.mobile-card {
+    width: calc(33% - 30px);
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.mobile-card-template {
+    display: none;
+}
+
+.header-template{
+    display: none;
+}
+
+.wrapper-template{
+    display:none;
+}
+.mobile-list-header{
+    text-align: center;
+}
+
+.mobile-list-wrapper{
+    border: 1px solid red;
+    
+    margin: 2px;
+}
+
+.mobile-card{
+    background-color: #e8a87c;
+    box-shadow:3px 3px grey;
+    padding: 5px;
+}
+
+.mobile-card:hover{
+    background: #bc986a;
+}
+.pagination{
+    margin: 10px;
+}
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }

@@ -1,0 +1,24 @@
+var mobileWrapper = document.querySelector('.wrapper-template');
+var mobileHeader = document.querySelector('.header-template');
+var mobileCardTemplate = document.querySelector(".mobile-card-template");
+var mobileSection = document.querySelector(".mobile-section");
+for (var obj in mobiles) {
+  console.log(mobiles[obj].length);
+  var mobileWrapperNode = mobileWrapper.cloneNode(false);
+  mobileWrapperNode.classList.remove('wrapper-template');
+  var mobileHeaderNode = mobileHeader.cloneNode(true);
+  mobileHeaderNode.classList.remove('header-template');
+  mobileHeaderNode.innerText = obj;
+  mobileWrapperNode.appendChild(mobileHeaderNode);
+  mobiles[obj].forEach(function (item) {
+    var mobileTemplate = mobileCardTemplate.cloneNode(true);
+    mobileTemplate.classList.remove("mobile-card-template");
+    mobileTemplate.querySelector(".mobile-name").innerText = item["model"];
+    mobileTemplate.querySelector(".mobile-ram").innerText = item["ram"];
+    mobileTemplate.querySelector(".mobile-price").innerText = item["price"];
+    mobileWrapperNode.appendChild(mobileTemplate);
+  })
+  mobileSection.appendChild(mobileWrapperNode);
+}
+
+C:\Users\Admin\Desktop\Object Assignement\js Assignement\index.html
